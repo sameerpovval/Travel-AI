@@ -27,7 +27,7 @@ Include:
             },
         ],
 
-        model: "llama-3.3-70b-versatile",
+        model: "openai/gpt-oss-120b",
     });
 
     return completion.choices[0].message.content;
@@ -64,7 +64,7 @@ ${itinerary}`,
 
             messages: chatMessages,
 
-            model: "llama-3.3-70b-versatile",
+           model: "openai/gpt-oss-120b",
         });
 
     return completion.choices[0].message.content;
@@ -103,7 +103,7 @@ Do not explain anything.
             },
         ],
 
-        model: "llama-3.3-70b-versatile",
+       model: "openai/gpt-oss-120b",
     });
 
     return JSON.parse(
@@ -140,7 +140,7 @@ Format the response clearly using headings and bullet points.
             },
         ],
 
-        model: "llama-3.3-70b-versatile",
+      model: "openai/gpt-oss-120b",
     });
 
     return completion.choices[0].message.content;
